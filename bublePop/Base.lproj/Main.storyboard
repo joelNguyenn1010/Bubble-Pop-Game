@@ -1,24 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bz3-xm-yuo">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Launch View-->
+        <scene sceneID="Dij-dH-wzs">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="Bz3-xm-yuo" customClass="LaunchView" customModule="bublePop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MHL-kw-ltp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVP-bg-gOe">
+                                <rect key="frame" x="350" y="20" width="54" height="35"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="Setting">
+                                    <color key="titleColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToSetting:" destination="Bz3-xm-yuo" eventType="touchUpInside" id="Td2-e6-rFS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="Bubble Pop" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQA-g7-G4F">
+                                <rect key="frame" x="50" y="120.00000000000001" width="314" height="45.666666666666671"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="35"/>
+                                <color key="textColor" red="0.94275027513504028" green="0.25806479355902157" blue="0.22195093708077043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d8i-x7-NAm">
+                                <rect key="frame" x="128" y="310.33333333333331" width="159" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="XUL-Oy-Wuy"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Play">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="32" name="MarkerFelt-Wide"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="playIsTouched:" destination="Bz3-xm-yuo" eventType="touchUpInside" id="8Jr-G1-SHp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZVP-bg-gOe" firstAttribute="top" secondItem="k4J-4H-oUP" secondAttribute="top" id="6b1-ua-hjL"/>
+                            <constraint firstItem="LQA-g7-G4F" firstAttribute="top" secondItem="k4J-4H-oUP" secondAttribute="top" constant="100" id="9J8-nO-huI"/>
+                            <constraint firstItem="d8i-x7-NAm" firstAttribute="top" secondItem="LQA-g7-G4F" secondAttribute="bottom" constant="145" id="Gh4-CG-kcR"/>
+                            <constraint firstItem="ZVP-bg-gOe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MHL-kw-ltp" secondAttribute="leading" constant="20" symbolic="YES" id="LOM-ro-2n0"/>
+                            <constraint firstItem="k4J-4H-oUP" firstAttribute="trailing" secondItem="ZVP-bg-gOe" secondAttribute="trailing" constant="10" id="UjX-Sh-Z9p"/>
+                            <constraint firstItem="k4J-4H-oUP" firstAttribute="trailing" secondItem="LQA-g7-G4F" secondAttribute="trailing" constant="50" id="X0G-0b-blo"/>
+                            <constraint firstItem="k4J-4H-oUP" firstAttribute="trailing" secondItem="d8i-x7-NAm" secondAttribute="trailing" constant="127" id="eD2-ww-qqx"/>
+                            <constraint firstItem="LQA-g7-G4F" firstAttribute="leading" secondItem="k4J-4H-oUP" secondAttribute="leading" constant="50" id="fpI-uH-OXS"/>
+                            <constraint firstItem="d8i-x7-NAm" firstAttribute="leading" secondItem="k4J-4H-oUP" secondAttribute="leading" constant="128" id="ovd-kO-gNa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k4J-4H-oUP"/>
                     </view>
+                    <connections>
+                        <outlet property="SettingViewController" destination="EdZ-dS-sGa" id="0Vu-FW-R8L"/>
+                        <outlet property="timeSettingLabel" destination="P2L-hG-vom" id="am0-Zb-JCE"/>
+                        <outlet property="timeSlider" destination="Lxt-Uy-9Pz" id="lK2-eA-Fqq"/>
+                        <segue destination="ObU-me-9PN" kind="show" identifier="EnterLoad" id="rkV-KW-Iab"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wkP-wE-CCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="EdZ-dS-sGa">
+                    <rect key="frame" x="0.0" y="0.0" width="248" height="132"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIG-NV-wQU">
+                            <rect key="frame" x="84" y="77" width="73" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                            <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                            <state key="normal" title="Dismiss">
+                                <color key="titleColor" red="0.96940380334854126" green="0.19701780335257746" blue="0.70084616426578394" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="returnIsTouched:" destination="Bz3-xm-yuo" eventType="touchUpInside" id="LaP-TR-M7p"/>
+                            </connections>
+                        </button>
+                        <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.10000000000000001" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Lxt-Uy-9Pz">
+                            <rect key="frame" x="67" y="39" width="118" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" red="0.96940380334854126" green="0.063429830992443204" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="ChangeTime:" destination="Bz3-xm-yuo" eventType="valueChanged" id="GHk-5r-Sdw"/>
+                            </connections>
+                        </slider>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time: 60" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2L-hG-vom">
+                            <rect key="frame" x="69" y="25" width="124" height="23"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="15"/>
+                            <color key="textColor" red="0.96940380334854126" green="0.0" blue="0.0090753214291864129" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25058939136578606" green="0.9908205454525465" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <viewLayoutGuide key="safeArea" id="1nS-KN-cG9"/>
+                </view>
             </objects>
+            <point key="canvasLocation" x="1725" y="130"/>
+        </scene>
+        <!--Countdown View-->
+        <scene sceneID="QhM-rA-mae">
+            <objects>
+                <viewController id="ObU-me-9PN" customClass="CountdownView" customModule="bublePop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SNz-mt-kYP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5T-eN-tm1">
+                                <rect key="frame" x="165.66666666666666" y="285.66666666666669" width="83" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="4Ii-A1-b2s"/>
+                                    <constraint firstAttribute="height" constant="165" id="iox-fo-M55"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="127"/>
+                                <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="M5T-eN-tm1" firstAttribute="centerY" secondItem="SNz-mt-kYP" secondAttribute="centerY" id="Bfz-iv-lh3"/>
+                            <constraint firstItem="M5T-eN-tm1" firstAttribute="centerX" secondItem="SNz-mt-kYP" secondAttribute="centerX" id="nqt-Tj-COb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d2i-1X-3bW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g4c-Xn-79U"/>
+                    <connections>
+                        <outlet property="countDown" destination="M5T-eN-tm1" id="HDu-8B-Jvk"/>
+                        <segue destination="Ea0-oZ-IoO" kind="show" identifier="startGame" id="8uv-ac-XS1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="92N-KF-N2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2775.36231884058" y="130.43478260869566"/>
+        </scene>
+        <!--Game Play View-->
+        <scene sceneID="jbz-VV-IUV">
+            <objects>
+                <viewController id="Ea0-oZ-IoO" customClass="GamePlayView" customModule="bublePop" customModuleProvider="target" sceneMemberID="viewController">
+                    <sceneKitView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="MXp-bN-XNT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </sceneKitView>
+                    <connections>
+                        <segue destination="aVr-cw-ktf" kind="show" identifier="endGame" id="Ozc-II-q12"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dyh-Jf-F4p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3738" y="130"/>
+        </scene>
+        <!--End View-->
+        <scene sceneID="xLo-P6-WQ4">
+            <objects>
+                <viewController id="aVr-cw-ktf" customClass="EndView" customModule="bublePop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nm3-u5-V7q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJm-mX-Vy6">
+                                <rect key="frame" x="0.0" y="195" width="414" height="51"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="1" green="0.98112637816105608" blue="0.95550126586978057" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhd-qY-Ade">
+                                <rect key="frame" x="0.0" y="275" width="414" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" red="0.9200318455696106" green="0.81069315122724395" blue="0.073708118990880811" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbm-zs-wNO">
+                                <rect key="frame" x="180" y="351" width="54" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="15"/>
+                                <state key="normal" title="Main">
+                                    <color key="titleColor" red="1" green="0.06886711251548383" blue="0.10647282652894063" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="c2o-OZ-IQy" kind="unwind" unwindAction="unwindToLaunchViewControllerWithSegue:" id="duH-oO-d0B"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Over" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ln-bQ-LQU">
+                                <rect key="frame" x="0.0" y="43" width="414" height="86"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <color key="backgroundColor" red="0.9200318455696106" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="43"/>
+                                <color key="textColor" red="0.91067436570853988" green="0.9200318455696106" blue="0.91351361473255499" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suG-n6-smw">
+                                <rect key="frame" x="0.0" y="304" width="414" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ztQ-gW-vBl"/>
+                    </view>
+                    <connections>
+                        <outlet property="highScoreDisplayLabel" destination="Nhd-qY-Ade" id="MmO-IB-X0r"/>
+                        <outlet property="playerScoreDisplayLabel" destination="RJm-mX-Vy6" id="goP-YG-fMm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W2o-Ao-qir" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="c2o-OZ-IQy" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4681" y="130"/>
         </scene>
     </scenes>
 </document>

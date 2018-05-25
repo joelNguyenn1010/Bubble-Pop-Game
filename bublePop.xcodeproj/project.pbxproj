@@ -3,17 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A031A98C88290024F862D7A /* Pods_bublePop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409877162E6B5A9C17505271 /* Pods_bublePop.framework */; };
+		33ACBD45CFED1AF2566FF918 /* Pods_bublePopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7B47912A4B85968E5B3F60 /* Pods_bublePopUITests.framework */; };
+		C0307706208F2C6F005DA444 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0307705208F2C6F005DA444 /* GamePlayViewController.swift */; };
+		C030770A208F2D00005DA444 /* BubblesColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0307709208F2D00005DA444 /* BubblesColor.swift */; };
+		C05A5E3B208CCE1F0033AB78 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05A5E3A208CCE1F0033AB78 /* Player.swift */; };
+		C05CA464208C7DB800052F6F /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05CA463208C7DB800052F6F /* CountdownView.swift */; };
+		C05CA468208C7E0400052F6F /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05CA467208C7E0400052F6F /* EndViewController.swift */; };
 		C061CFBC208B277D00B849C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C061CFBB208B277D00B849C5 /* AppDelegate.swift */; };
-		C061CFBE208B277D00B849C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C061CFBD208B277D00B849C5 /* ViewController.swift */; };
-		C061CFC1208B277D00B849C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C061CFBF208B277D00B849C5 /* Main.storyboard */; };
+		C061CFBE208B277D00B849C5 /* LanchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C061CFBD208B277D00B849C5 /* LanchViewController.swift */; };
+		C061CFC1208B277D00B849C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C061CFBF208B277D00B849C5 /* Main.storyboard */; settings = {ASSET_TAGS = (Countdown, ); }; };
 		C061CFC3208B277D00B849C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C061CFC2208B277D00B849C5 /* Assets.xcassets */; };
 		C061CFC6208B277D00B849C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C061CFC4208B277D00B849C5 /* LaunchScreen.storyboard */; };
 		C061CFD1208B277E00B849C5 /* bublePopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C061CFD0208B277E00B849C5 /* bublePopTests.swift */; };
 		C061CFDC208B277E00B849C5 /* bublePopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C061CFDB208B277E00B849C5 /* bublePopUITests.swift */; };
+		C0C9D0A420B6867A00BE2466 /* PlayerManament.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C9D0A320B6867A00BE2466 /* PlayerManament.swift */; };
+		C0C9D0AA20B68DE800BE2466 /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0C9D0A920B68DE800BE2466 /* pop.mp3 */; };
+		C0C9D0AE20B6ADCB00BE2466 /* boom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0C9D0AD20B6ADCB00BE2466 /* boom.mp3 */; };
+		C0DD6C26208F32570091412F /* background.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C0DD6C25208F32570091412F /* background.scnassets */; };
+		C0E1A409209B47BB002DB906 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0E1A408209B47BB002DB906 /* GoogleService-Info.plist */; };
+		C0EEF14B208DFD5900AC1111 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EEF14A208DFD5900AC1111 /* Setting.swift */; };
+		C0FE6B48208F615400F7D930 /* Bubbles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE6B47208F615300F7D930 /* Bubbles.swift */; };
+		E551A08B0D65525A231866D8 /* Pods_bublePopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852F44A977D9387AE760C0AF /* Pods_bublePopTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +49,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		274F27DCBCD2396A01A8E616 /* Pods-bublePop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bublePop.release.xcconfig"; path = "Pods/Target Support Files/Pods-bublePop/Pods-bublePop.release.xcconfig"; sourceTree = "<group>"; };
+		409877162E6B5A9C17505271 /* Pods_bublePop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bublePop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A7B47912A4B85968E5B3F60 /* Pods_bublePopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bublePopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E6E6986EE6E87F1D7792C69 /* Pods-bublePopUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bublePopUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bublePopUITests/Pods-bublePopUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		852F44A977D9387AE760C0AF /* Pods_bublePopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bublePopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0307705208F2C6F005DA444 /* GamePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
+		C0307709208F2D00005DA444 /* BubblesColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubblesColor.swift; sourceTree = "<group>"; };
+		C05A5E3A208CCE1F0033AB78 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		C05CA463208C7DB800052F6F /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
+		C05CA467208C7E0400052F6F /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		C061CFB8208B277D00B849C5 /* bublePop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bublePop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C061CFBB208B277D00B849C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C061CFBD208B277D00B849C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C061CFBD208B277D00B849C5 /* LanchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanchViewController.swift; sourceTree = "<group>"; };
 		C061CFC0208B277D00B849C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C061CFC2208B277D00B849C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C061CFC5208B277D00B849C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +72,18 @@
 		C061CFD7208B277E00B849C5 /* bublePopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bublePopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C061CFDB208B277E00B849C5 /* bublePopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bublePopUITests.swift; sourceTree = "<group>"; };
 		C061CFDD208B277E00B849C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C9D0A320B6867A00BE2466 /* PlayerManament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManament.swift; sourceTree = "<group>"; };
+		C0C9D0A920B68DE800BE2466 /* pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pop.mp3; sourceTree = "<group>"; };
+		C0C9D0AD20B6ADCB00BE2466 /* boom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boom.mp3; sourceTree = "<group>"; };
+		C0DD6C25208F32570091412F /* background.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = background.scnassets; sourceTree = "<group>"; };
+		C0E1A405209B407F002DB906 /* bublePop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = bublePop.entitlements; sourceTree = "<group>"; };
+		C0E1A408209B47BB002DB906 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C0EEF14A208DFD5900AC1111 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		C0FE6B47208F615300F7D930 /* Bubbles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bubbles.swift; sourceTree = "<group>"; };
+		D3D5B0EF95DB1286CE4F75E5 /* Pods-bublePopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bublePopTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bublePopTests/Pods-bublePopTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF67E837684EC61D4939DC88 /* Pods-bublePopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bublePopTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-bublePopTests/Pods-bublePopTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED4F0F60E7B6A969148696E7 /* Pods-bublePop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bublePop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bublePop/Pods-bublePop.debug.xcconfig"; sourceTree = "<group>"; };
+		F7D05A5A54EE4885BE643C21 /* Pods-bublePopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bublePopUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-bublePopUITests/Pods-bublePopUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A031A98C88290024F862D7A /* Pods_bublePop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E551A08B0D65525A231866D8 /* Pods_bublePopTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +107,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33ACBD45CFED1AF2566FF918 /* Pods_bublePopUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A822230D561EC6C673303BC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED4F0F60E7B6A969148696E7 /* Pods-bublePop.debug.xcconfig */,
+				274F27DCBCD2396A01A8E616 /* Pods-bublePop.release.xcconfig */,
+				D3D5B0EF95DB1286CE4F75E5 /* Pods-bublePopTests.debug.xcconfig */,
+				DF67E837684EC61D4939DC88 /* Pods-bublePopTests.release.xcconfig */,
+				4E6E6986EE6E87F1D7792C69 /* Pods-bublePopUITests.debug.xcconfig */,
+				F7D05A5A54EE4885BE643C21 /* Pods-bublePopUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C019D319209A22AC007ACE8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				409877162E6B5A9C17505271 /* Pods_bublePop.framework */,
+				852F44A977D9387AE760C0AF /* Pods_bublePopTests.framework */,
+				4A7B47912A4B85968E5B3F60 /* Pods_bublePopUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C061CFAF208B277D00B849C5 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +144,8 @@
 				C061CFCF208B277E00B849C5 /* bublePopTests */,
 				C061CFDA208B277E00B849C5 /* bublePopUITests */,
 				C061CFB9208B277D00B849C5 /* Products */,
+				C019D319209A22AC007ACE8E /* Frameworks */,
+				A822230D561EC6C673303BC3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +162,17 @@
 		C061CFBA208B277D00B849C5 /* bublePop */ = {
 			isa = PBXGroup;
 			children = (
+				C0E1A405209B407F002DB906 /* bublePop.entitlements */,
 				C061CFBB208B277D00B849C5 /* AppDelegate.swift */,
-				C061CFBD208B277D00B849C5 /* ViewController.swift */,
 				C061CFBF208B277D00B849C5 /* Main.storyboard */,
+				C0DF609120B685EE005D8C3B /* Controller */,
+				C0DF609020B685E2005D8C3B /* StorageManament */,
+				C0DF608F20B685D0005D8C3B /* Data Model */,
+				C0DD6C25208F32570091412F /* background.scnassets */,
+				C0910E7320B6851E006A43C7 /* uti */,
 				C061CFC2208B277D00B849C5 /* Assets.xcassets */,
 				C061CFC4208B277D00B849C5 /* LaunchScreen.storyboard */,
+				C0910E7420B6853F006A43C7 /* Extra */,
 				C061CFC7208B277D00B849C5 /* Info.plist */,
 			);
 			path = bublePop;
@@ -125,6 +196,53 @@
 			path = bublePopUITests;
 			sourceTree = "<group>";
 		};
+		C0910E7320B6851E006A43C7 /* uti */ = {
+			isa = PBXGroup;
+			children = (
+				C0C9D0AD20B6ADCB00BE2466 /* boom.mp3 */,
+				C0C9D0A920B68DE800BE2466 /* pop.mp3 */,
+				C0FE6B47208F615300F7D930 /* Bubbles.swift */,
+				C0307709208F2D00005DA444 /* BubblesColor.swift */,
+			);
+			path = uti;
+			sourceTree = "<group>";
+		};
+		C0910E7420B6853F006A43C7 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				C0E1A408209B47BB002DB906 /* GoogleService-Info.plist */,
+			);
+			path = Extra;
+			sourceTree = "<group>";
+		};
+		C0DF608F20B685D0005D8C3B /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0EEF14A208DFD5900AC1111 /* Setting.swift */,
+				C05A5E3A208CCE1F0033AB78 /* Player.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		C0DF609020B685E2005D8C3B /* StorageManament */ = {
+			isa = PBXGroup;
+			children = (
+				C0C9D0A320B6867A00BE2466 /* PlayerManament.swift */,
+			);
+			path = StorageManament;
+			sourceTree = "<group>";
+		};
+		C0DF609120B685EE005D8C3B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C061CFBD208B277D00B849C5 /* LanchViewController.swift */,
+				C05CA463208C7DB800052F6F /* CountdownView.swift */,
+				C0307705208F2C6F005DA444 /* GamePlayViewController.swift */,
+				C05CA467208C7E0400052F6F /* EndViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +250,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C061CFE0208B277E00B849C5 /* Build configuration list for PBXNativeTarget "bublePop" */;
 			buildPhases = (
+				3F3AAD6BE1BD32DEA845F768 /* [CP] Check Pods Manifest.lock */,
 				C061CFB4208B277D00B849C5 /* Sources */,
 				C061CFB5208B277D00B849C5 /* Frameworks */,
 				C061CFB6208B277D00B849C5 /* Resources */,
+				F3DE293A41E1BBDC153948B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +269,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C061CFE3208B277E00B849C5 /* Build configuration list for PBXNativeTarget "bublePopTests" */;
 			buildPhases = (
+				DFF54E46614B0C0666384083 /* [CP] Check Pods Manifest.lock */,
 				C061CFC8208B277E00B849C5 /* Sources */,
 				C061CFC9208B277E00B849C5 /* Frameworks */,
 				C061CFCA208B277E00B849C5 /* Resources */,
@@ -167,6 +288,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C061CFE6208B277E00B849C5 /* Build configuration list for PBXNativeTarget "bublePopUITests" */;
 			buildPhases = (
+				082B857F36E565BF2CD448A8 /* [CP] Check Pods Manifest.lock */,
 				C061CFD3208B277E00B849C5 /* Sources */,
 				C061CFD4208B277E00B849C5 /* Frameworks */,
 				C061CFD5208B277E00B849C5 /* Resources */,
@@ -187,25 +309,39 @@
 		C061CFB0208B277D00B849C5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Countdown,
+				);
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Nguyễn Ngọc Anh";
 				TargetAttributes = {
 					C061CFB7208B277D00B849C5 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter.iOS = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					C061CFCB208B277E00B849C5 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 						TestTargetID = C061CFB7208B277D00B849C5;
 					};
 					C061CFD6208B277E00B849C5 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 						TestTargetID = C061CFB7208B277D00B849C5;
 					};
 				};
 			};
 			buildConfigurationList = C061CFB3208B277D00B849C5 /* Build configuration list for PBXProject "bublePop" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -229,7 +365,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C9D0AA20B68DE800BE2466 /* pop.mp3 in Resources */,
 				C061CFC6208B277D00B849C5 /* LaunchScreen.storyboard in Resources */,
+				C0DD6C26208F32570091412F /* background.scnassets in Resources */,
+				C0C9D0AE20B6ADCB00BE2466 /* boom.mp3 in Resources */,
+				C0E1A409209B47BB002DB906 /* GoogleService-Info.plist in Resources */,
 				C061CFC3208B277D00B849C5 /* Assets.xcassets in Resources */,
 				C061CFC1208B277D00B849C5 /* Main.storyboard in Resources */,
 			);
@@ -251,13 +391,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		082B857F36E565BF2CD448A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bublePopUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F3AAD6BE1BD32DEA845F768 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bublePop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFF54E46614B0C0666384083 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bublePopTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3DE293A41E1BBDC153948B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-bublePop/Pods-bublePop-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bublePop/Pods-bublePop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C061CFB4208B277D00B849C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C061CFBE208B277D00B849C5 /* ViewController.swift in Sources */,
+				C05CA464208C7DB800052F6F /* CountdownView.swift in Sources */,
+				C0C9D0A420B6867A00BE2466 /* PlayerManament.swift in Sources */,
+				C05A5E3B208CCE1F0033AB78 /* Player.swift in Sources */,
+				C061CFBE208B277D00B849C5 /* LanchViewController.swift in Sources */,
+				C0307706208F2C6F005DA444 /* GamePlayViewController.swift in Sources */,
+				C030770A208F2D00005DA444 /* BubblesColor.swift in Sources */,
 				C061CFBC208B277D00B849C5 /* AppDelegate.swift in Sources */,
+				C0FE6B48208F615400F7D930 /* Bubbles.swift in Sources */,
+				C0EEF14B208DFD5900AC1111 /* Setting.swift in Sources */,
+				C05CA468208C7E0400052F6F /* EndViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,24 +647,23 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		C061CFE1208B277E00B849C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED4F0F60E7B6A969148696E7 /* Pods-bublePop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = bublePop/bublePop.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6WR8B5D8J2;
 				INFOPLIST_FILE = bublePop/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Joel.bublePop;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bubble-Po";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -446,16 +672,16 @@
 		};
 		C061CFE2208B277E00B849C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 274F27DCBCD2396A01A8E616 /* Pods-bublePop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = bublePop/bublePop.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6WR8B5D8J2;
 				INFOPLIST_FILE = bublePop/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Joel.bublePop;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bubble-Po";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -464,17 +690,14 @@
 		};
 		C061CFE4208B277E00B849C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3D5B0EF95DB1286CE4F75E5 /* Pods-bublePopTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6WR8B5D8J2;
 				INFOPLIST_FILE = bublePopTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Joel.bublePopTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -485,17 +708,14 @@
 		};
 		C061CFE5208B277E00B849C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF67E837684EC61D4939DC88 /* Pods-bublePopTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6WR8B5D8J2;
 				INFOPLIST_FILE = bublePopTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Joel.bublePopTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -506,16 +726,13 @@
 		};
 		C061CFE7208B277E00B849C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E6E6986EE6E87F1D7792C69 /* Pods-bublePopUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6WR8B5D8J2;
 				INFOPLIST_FILE = bublePopUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Joel.bublePopUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -526,16 +743,13 @@
 		};
 		C061CFE8208B277E00B849C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7D05A5A54EE4885BE643C21 /* Pods-bublePopUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6WR8B5D8J2;
 				INFOPLIST_FILE = bublePopUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Joel.bublePopUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
